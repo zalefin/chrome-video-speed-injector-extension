@@ -1,6 +1,7 @@
 
 document.getElementById('inject-button').addEventListener('click', () => {
-    var user_in = Number(document.getElementById('speed-input').value);
+    var spd_inp = document.getElementById('speed-input');
+    var user_in = Number(spd_inp.value);
     if (user_in <= 0) {
         user_in = 1;
     }
@@ -19,6 +20,11 @@ document.getElementById('inject-button').addEventListener('click', () => {
             });
         });
     });
+
+    spd_inp.value = "1";
+    var status_text = document.getElementById('status');
+    status_text.innerHTML = `Set to ${user_in}`;
+    window.setTimeout(() => {status_text.innerHTML = ""}, 1000);
 })
 
 

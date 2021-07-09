@@ -5,9 +5,12 @@
     <body>
         <div>
             <label id='speed-label'>Speed:</label>
-            <input id="speed-input">
+            <input type="number" id="speed-input" min=0.25 max=16 step=0.25 value=1>
         </div>
-        <button id="inject-button">Inject</button>
+        <div>
+            <div><button id="inject-button">Inject</button></div>
+            <div id="status"></div>
+        </div>
     </body>
     <script src="popup.js"></script>
 </html>

@@ -6,7 +6,11 @@
     "homepage_url": "https://github.com/zalefin",
     "browser_action": {
         "default_title": "Inject video speed change!",
+        "default_icon": "icon.png",
         "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "icon.png"
     },
     "permissions": [
         "https://*/*",
