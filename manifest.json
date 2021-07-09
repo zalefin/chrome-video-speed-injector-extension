@@ -1,0 +1,16 @@
+{
+    "name": "Video Speed Injector",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Modify the speed of ALL HTML5 videos on any page",
+    "homepage_url": "https://github.com/zalefin",
+    "browser_action": {
+        "default_title": "Inject video speed change!",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "activeTab"
+    ]
+}
